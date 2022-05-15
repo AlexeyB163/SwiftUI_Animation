@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CE86E46D2831864D007B5AB8 /* SwiftUI_AnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86E46C2831864D007B5AB8 /* SwiftUI_AnimationApp.swift */; };
-		CE86E46F2831864D007B5AB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86E46E2831864D007B5AB8 /* ContentView.swift */; };
+		CE86E46F2831864D007B5AB8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86E46E2831864D007B5AB8 /* MainView.swift */; };
 		CE86E47128318653007B5AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE86E47028318653007B5AB8 /* Assets.xcassets */; };
 		CE86E47428318653007B5AB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE86E47328318653007B5AB8 /* Preview Assets.xcassets */; };
+		CE8C25E5283188C300609AB3 /* AppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C25E4283188C300609AB3 /* AppleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE86E4692831864D007B5AB8 /* SwiftUI_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE86E46C2831864D007B5AB8 /* SwiftUI_AnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimationApp.swift; sourceTree = "<group>"; };
-		CE86E46E2831864D007B5AB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE86E46E2831864D007B5AB8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE86E47028318653007B5AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE86E47328318653007B5AB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE8C25E4283188C300609AB3 /* AppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				CE86E46C2831864D007B5AB8 /* SwiftUI_AnimationApp.swift */,
-				CE86E46E2831864D007B5AB8 /* ContentView.swift */,
+				CE86E46E2831864D007B5AB8 /* MainView.swift */,
+				CE8C25E4283188C300609AB3 /* AppleView.swift */,
 				CE86E47028318653007B5AB8 /* Assets.xcassets */,
 				CE86E47228318653007B5AB8 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE86E46F2831864D007B5AB8 /* ContentView.swift in Sources */,
+				CE86E46F2831864D007B5AB8 /* MainView.swift in Sources */,
+				CE8C25E5283188C300609AB3 /* AppleView.swift in Sources */,
 				CE86E46D2831864D007B5AB8 /* SwiftUI_AnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
