@@ -8,50 +8,24 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var showAward = false
+
+    @State private var angle: Double = 0
     
     var body: some View {
         VStack {
-            Button(action: duttonAction) {
-                HStack {
-                    Text(showAward ? "Hide Award" : "Show Award")
-                    Spacer()
-                    Image(systemName: "chevron.up.square")
-                        .scaleEffect(showAward ? 2 : 1)
-                        .rotationEffect(.degrees(showAward ? 0 : 180))
-//                        .animation(.default)
-                }
+            Button {
+                angle += 90
+            } label: {
+              
+                BoatView()
+                    .frame(width: 200, height: 200)
+                    .rotationEffect(.degrees(angle))
+                    .animation(.interpolatingSpring(mass: 2, stiffness: 1, damping: 1, initialVelocity: 4), value: angle)
             }
-            
-            Spacer()
-            if showAward {
-//                GradientRectangles()
-//                    .frame(width: 250, height: 250)
-//                    .transition(.transition)
-            }
-
-            Spacer()
-        }
-        .font(.headline)
-        .padding()
-    }
-    
-    private func duttonAction() {
-        withAnimation {
-            showAward.toggle()
         }
     }
 }
 
-extension AnyTransition {
-    static var transition: AnyTransition {
-        let insertion = AnyTransition.move(edge: .leading)
-        let removal = AnyTransition.scale
-            .combined(with: .opacity)
-        
-        return .asymmetric(insertion: insertion, removal: removal)
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

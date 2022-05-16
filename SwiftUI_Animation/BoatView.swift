@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppleView: View {
+struct BoatView: View {
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
@@ -40,14 +40,14 @@ struct AppleView: View {
                 path.addLine(to: CGPoint(x: 155, y: middle + 17))
                 
             }
-            .stroke(Color.blue)
+            .stroke(Color.blue, lineWidth: 3)
         }
     }
 }
 
 struct AppleView_Previews: PreviewProvider {
     static var previews: some View {
-        AppleView()
+        BoatView()
             .frame(width: 200, height: 200)
     }
 }
